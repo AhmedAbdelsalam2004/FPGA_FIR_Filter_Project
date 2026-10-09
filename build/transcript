@@ -1,0 +1,42 @@
+# do ../scripts/run.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:00:54 on Oct 09,2026
+# vlog -reportprogress 300 ../rtd/fir_filter.v 
+# -- Compiling module fir_filter
+# 
+# Top level modules:
+# 	fir_filter
+# End time: 21:00:54 on Oct 09,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:00:54 on Oct 09,2026
+# vlog -reportprogress 300 ../tb/fir_filter_tb.v 
+# -- Compiling module fir_filter_tb
+# 
+# Top level modules:
+# 	fir_filter_tb
+# End time: 21:00:54 on Oct 09,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" work.fir_filter_tb 
+# Start time: 21:00:54 on Oct 09,2026
+# Loading work.fir_filter_tb
+# Loading work.fir_filter
+# Starting simulation...
+# Sample    0 | x_in:      0 | y_out:      0 | Golden:      0
+# Sample    1 | x_in:    420 | y_out:      0 | Golden:      1
+# Sample    2 | x_in:   -197 | y_out:      3 | Golden:     -1
+# Sample    3 | x_in:   4660 | y_out:      1 | Golden:      2
+# Sample    4 | x_in: -21555 | y_out:     38 | Golden:     -2
+# Sample    5 | x_in:     34 | y_out:   -131 | Golden:      3
+# Sample    6 | x_in:    -31 | y_out:   -130 | Golden:     -3
+# Sample    7 | x_in:   1365 | y_out:   -131 | Golden:      4
+# Sample    8 | x_in:  -1286 | y_out:   -120 | Golden:     -4
+# Sample    9 | x_in:    256 | y_out:   -130 | Golden:      5
+# Simulation complete. Total mismatches:           9
+# ** Note: $stop    : ../tb/fir_filter_tb.v(75)
+#    Time: 136 ns  Iteration: 0  Instance: /fir_filter_tb
+# Break in Module fir_filter_tb at ../tb/fir_filter_tb.v line 75
+# 0 ps
+# 142800 ps
+# End time: 21:05:18 on Oct 09,2026, Elapsed time: 0:04:24
+# Errors: 0, Warnings: 0

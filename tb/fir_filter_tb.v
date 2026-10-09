@@ -10,7 +10,7 @@ module fir_filter_tb;
 
     // 2. Memory Arrays for File I/O
     // Adjust NUM_SAMPLES to match however many samples your teammate generates in MATLAB
-    parameter NUM_SAMPLES = 1000;
+    parameter NUM_SAMPLES = 10;
     
     reg signed [15:0] stimulus_mem [0:NUM_SAMPLES-1];
     reg signed [15:0] golden_mem   [0:NUM_SAMPLES-1];
